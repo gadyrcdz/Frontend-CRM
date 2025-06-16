@@ -370,3 +370,90 @@
                     <div class="metric-label">+2.1% este trimestre</div>
                 </div>
             </div>
+
+            <div class="card">
+                <h3>📊 Actividad Reciente</h3>
+                <div style="height: 200px; display: flex; align-items: center; justify-content: center; color: #7f8c8d;">
+                    <div>
+                        <p>• Nuevo cliente registrado: TechStart Solutions</p>
+                        <p>• Oportunidad cerrada: $15,000 - DataCorp</p>
+                        <p>• Tarea completada: Llamada de seguimiento - ABC Corp</p>
+                        <p>• Nueva oportunidad: $25,000 - Innovation Labs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clients Tab -->
+        <div id="clients" class="tab-content">
+            <div class="action-buttons">
+                <input type="text" class="search-bar" placeholder="🔍 Buscar clientes..." onkeyup="filterClients(this.value)">
+                <button class="btn-primary" onclick="openModal('clientModal')">➕ Nuevo Cliente</button>
+            </div>
+            
+            <div class="table-container">
+                <table id="clientsTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Empresa</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Estado</th>
+                            <th>Última Actividad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>María González</td>
+                            <td>TechStart Solutions</td>
+                            <td>maria@techstart.com</td>
+                            <td>+506 8888-9999</td>
+                            <td><span class="status-badge status-active">Activo</span></td>
+                            <td>Hace 2 días</td>
+                            <td>
+                                <button class="btn-success">Editar</button>
+                                <button class="btn-warning">Ver</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carlos Mendez</td>
+                            <td>DataCorp Inc</td>
+                            <td>carlos@datacorp.com</td>
+                            <td>+506 7777-8888</td>
+                            <td><span class="status-badge status-active">Activo</span></td>
+                            <td>Hace 1 semana</td>
+                            <td>
+                                <button class="btn-success">Editar</button>
+                                <button class="btn-warning">Ver</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ana Rivera</td>
+                            <td>Innovation Labs</td>
+                            <td>ana@innovation.com</td>
+                            <td>+506 6666-7777</td>
+                            <td><span class="status-badge status-pending">Pendiente</span></td>
+                            <td>Hace 3 días</td>
+                            <td>
+                                <button class="btn-success">Editar</button>
+                                <button class="btn-warning">Ver</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Roberto Solís</td>
+                            <td>Digital Dreams</td>
+                            <td>roberto@digitaldreams.com</td>
+                            <td>+506 5555-6666</td>
+                            <td><span class="status-badge status-closed">Inactivo</span></td>
+                            <td>Hace 2 semanas</td>
+                            <td>
+                                <button class="btn-success">Editar</button>
+                                <button class="btn-warning">Ver</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
