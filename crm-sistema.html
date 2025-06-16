@@ -332,3 +332,41 @@
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 Sistema CRM - Gestión de Clientes y Ventas</h1>
+            <p>Panel de administración para la gestión integral de relaciones con clientes</p>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('dashboard')">📊 Dashboard</button>
+            <button class="nav-tab" onclick="showTab('clients')">👥 Clientes</button>
+            <button class="nav-tab" onclick="showTab('opportunities')">💼 Oportunidades</button>
+            <button class="nav-tab" onclick="showTab('tasks')">✅ Tareas</button>
+            <button class="nav-tab" onclick="showTab('reports')">📈 Reportes</button>
+        </div>
+
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content active">
+            <div class="dashboard-grid">
+                <div class="card metric-card">
+                    <h3>👥 Total Clientes</h3>
+                    <div class="metric-value">247</div>
+                    <div class="metric-label">+12% este mes</div>
+                </div>
+                <div class="card metric-card">
+                    <h3>💰 Ventas del Mes</h3>
+                    <div class="metric-value">$125,430</div>
+                    <div class="metric-label">+8.5% vs mes anterior</div>
+                </div>
+                <div class="card metric-card">
+                    <h3>📋 Tareas Pendientes</h3>
+                    <div class="metric-value">18</div>
+                    <div class="metric-label">7 vencen hoy</div>
+                </div>
+                <div class="card metric-card">
+                    <h3>🎯 Tasa de Conversión</h3>
+                    <div class="metric-value">23.5%</div>
+                    <div class="metric-label">+2.1% este trimestre</div>
+                </div>
+            </div>
