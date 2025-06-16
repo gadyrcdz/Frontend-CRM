@@ -508,3 +508,80 @@
                 </div>
             </div>
         </div>
+
+         <!-- Tasks Tab -->
+        <div id="tasks" class="tab-content">
+            <div class="action-buttons">
+                <button class="btn-primary" onclick="openModal('taskModal')">➕ Nueva Tarea</button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tarea</th>
+                            <th>Cliente</th>
+                            <th>Tipo</th>
+                            <th>Fecha Vencimiento</th>
+                            <th>Prioridad</th>
+                            <th>Estado</th>
+                            <th>Progreso</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Llamada de seguimiento</td>
+                            <td>TechStart Solutions</td>
+                            <td>Llamada</td>
+                            <td>Hoy</td>
+                            <td><span class="status-badge" style="background: #fadbd8; color: #e74c3c;">Alta</span></td>
+                            <td><span class="status-badge status-pending">Pendiente</span></td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 30%"></div>
+                                </div>
+                                30%
+                            </td>
+                            <td>
+                                <button class="btn-success">Completar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Envío de propuesta</td>
+                            <td>Innovation Labs</td>
+                            <td>Email</td>
+                            <td>Mañana</td>
+                            <td><span class="status-badge" style="background: #fef9e7; color: #f39c12;">Media</span></td>
+                            <td><span class="status-badge status-active">En Progreso</span></td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                75%
+                            </td>
+                            <td>
+                                <button class="btn-success">Ver</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reunión de cierre</td>
+                            <td>DataCorp Inc</td>
+                            <td>Reunión</td>
+                            <td>En 3 días</td>
+                            <td><span class="status-badge" style="background: #d5f4e6; color: #27ae60;">Baja</span></td>
+                            <td><span class="status-badge status-closed">Completado</span></td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%"></div>
+                                </div>
+                                100%
+                            </td>
+                            <td>
+                                <button class="btn-warning">Ver</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
